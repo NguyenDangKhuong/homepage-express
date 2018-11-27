@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 241 241" style="enable-background:new 0 0 241 241;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#F3F8FB;}
+	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<pattern  y="241" width="20" height="200" patternUnits="userSpaceOnUse" id="Unnamed_Pattern_3" viewBox="0 -200 20 200" style="overflow:visible;">
+	<g>
+		<rect y="-200" class="st0" width="20" height="200"/>
+		<path class="st0" d="M0,0h20v-200H0V0z"/>
+		<path class="st1" d="M0,0h10v-200H0V0z"/>
+		<path class="st2" d="M10,0h10v-200H10V0z"/>
+	</g>
+</pattern>
+<title>アセット 4</title>
+<path class="st3" d="M120.5,241C54.1,241,0,186.9,0,120.5c0-29.1,10.6-57.2,29.9-79l36.8,36.8c-8.6,12.4-13.3,27.1-13.3,42.2
+	c0,37.8,28.9,69.4,67.1,69.4c15.7,0,30.8-5.5,42.8-15.6l36.5,36.9C177.9,230.4,149.7,241.1,120.5,241z"/>
+<pattern  id="SVGID_1_" xlink:href="#Unnamed_Pattern_3" patternTransform="matrix(-0.22 0.2184 0.2184 0.22 -7685.978 -4788.3442)">
+</pattern>
+<path class="st4" d="M41.5,29.5c21.9-19.1,50-29.7,79-29.5C186.9,0,241,54.1,241,120.5c0,29-10.4,57.1-29.5,79L174.3,162
+	c8.7-12.1,13.4-26.6,13.3-41.5c0-37.8-28.9-69.4-67.1-69.4c-15.4,0-30.3,5.4-42.2,15.3L41.5,29.5z"/>
+</svg>

@@ -1,0 +1,198 @@
+// remove default browser CSS
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+//common CSS
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.section{
+  text-align: center;
+}
+
+
+
+//animation
+
+.animate-header {
+  animation: animateHeader 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-width-left-to-right {
+  animation: widthLeftToRigth 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-width-right-to-left {
+  animation: widthRigthToLeft 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-load-bottom{
+  animation: animateLoadBottom 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-scroll-bottom {
+  position: relative;
+  animation: animateScrollBottom 3s;
+}
+
+.animate-fade-in{
+  animation: fadeIn 4s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animateLoadBottom {
+  from {
+    opacity: 0;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateScrollBottom {
+  from {
+    bottom: -200px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@keyframes changered {
+  from {
+    background-color: #f2f8fb;
+    color: #e50012;
+  }
+  to {
+    background-color: #e50012;
+    color: #f2f8fb;
+  }
+}
+
+@keyframes widthLeftToRigth {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+@keyframes  animateHeader{
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100px;
+    opacity: 1;
+  }
+}
+
+
+@keyframes widthRigthToLeft {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    bottom: -200px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}

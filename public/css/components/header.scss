@@ -1,0 +1,141 @@
+// header CSS
+
+.header {
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  transition: all 0.1s;
+  &-full {
+    height: 100px;
+    opacity: 1;
+  }
+  &-mini {
+    height: 60px;
+    opacity: 1;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-logo {
+  width: 55%;
+}
+
+.nav-menu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  li {
+    color: #e50012;
+    font-family: -webkit-body;
+    font-weight: 900;
+    &:hover {
+      color: #ff505d;
+    }
+  }
+}
+
+.user-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex > li {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.icon-facebook {
+  background-color: #4267b2;
+  i.fa-facebook-f {
+    color: white;
+  }
+}
+
+.icon-twitter {
+  background-color: #1da1f3;
+  i.fa-twitter {
+    color: white;
+  }
+}
+
+.icon-instagram {
+  background: linear-gradient(to bottom left, #6600cc 0%, #ff9900 100%);
+  i.fa-instagram {
+    color: white;
+  }
+}
+
+.icon-facebook:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  i.fa-facebook-f {
+    color: #4267b2;
+  }
+}
+
+.icon-twitter:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  i.fa-twitter {
+    color: #1da1f3;
+  }
+}
+
+.icon-instagram:hover {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  i.fa-instagram {
+    color: #9c3fce
+  }
+}
+
+.language-dropdown {
+  border-radius: 5px;
+}
+
+.language-dropdown:hover {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.language-icons {
+  color: #e50012;
+  font-size: 30px
+}
+
+.language-title {
+  color: #e50012;
+  font-size: 15px;
+  &-icons {
+    color: #e50012;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: 900;
+  }
+}
+
+.l-contents {
+  padding-top: 100px;
+  position: relative;
+}

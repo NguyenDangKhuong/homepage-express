@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "client": "webpack-dev-server --open --config webpack.config.js --mode development",
-    "server": "nodemon ./bin/www"
+    "server": "nodemon ./bin/www",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

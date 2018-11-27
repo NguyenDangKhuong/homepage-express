@@ -1,0 +1,224 @@
+//footer CSS
+
+footer {
+  &.home {
+    padding: 6% 0 0;
+    text-align: center;
+    background: url(https://www.asoview.co.jp/wp-content/uploads/bg_contact_01.jpg) center center no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    a{
+      text-decoration: none;
+    }
+  }
+  &.home::after {
+    height: 9px;
+    //background: url(../images/common/line_03_pc.png) no-repeat 0 0;
+    background-size: 100% 9px;
+    content: '';
+    display: block;
+  }
+  .center-block{
+    margin: auto;
+    width: 35%;
+  }
+  h2 {
+    font: normal 35px ralewaymedium;
+    color: #e50012;
+    margin: 0;
+    padding: 0 0 18px;
+  }
+  p {
+    font-size: 16px;
+    color: #fff;
+    padding: 25px 0px;
+    line-height: 26px;
+    font: normal 18px ralewaylight;
+  }
+}
+.textboxholder {
+  position: relative;
+  width: 100%;
+}
+.textbox1 {
+  width: 100%;
+  height: 49px;
+  background-color: #fff;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 5px;
+  font: normal 14px ralewayregular;
+  color: #838383;
+  padding: 0 25px;
+}
+.submit_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  height: 49px;
+  background-color: #e50012;
+  font: normal 12px ralewayregular;
+  color: #fff;
+  text-transform: uppercase;
+  width: 140px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 49px;
+  border-radius: 2px;
+}
+.footer_btm {
+  margin-top: 0;
+  padding-top: 5%;
+  position: relative;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0;
+      padding: 0 30px;
+      font: normal 14px ralewayregular;
+      color: #9b9b9b;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      text-transform: uppercase;
+      &:before {
+        position: absolute;
+        content: '|';
+        left: 0;
+        top: 0;
+        color: #9b9b9b;
+      }
+      a {
+        position: relative;
+        color: #9b9b9b;
+        &:after {
+          content: "";
+          bottom: 0;
+          height: 1px;
+          left: 50%;
+          position: absolute;
+          width: 0;
+        }
+      }
+      &:hover {
+        color: #bf1e2e;
+        a:after {
+          width: 100%;
+          margin-left: -50%;
+        }
+      }
+      a::after {
+        bottom: -10px;
+        height: 2px;
+        background: #bf1e2e;
+        //transition: all .2s ease 0;
+      }
+      &:first-child:before {
+        display: none;
+      }
+    }
+  }
+  p {
+    font: normal 14px ralewayregular;
+    color: #9b9b9b;
+    margin: 0;
+    padding: 16px 0;
+    a {
+      position: relative;
+      color: #9b9b9b;
+    }
+  }
+  .footer_navigator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    dd {
+      flex: 1;
+      position: relative;
+      a {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 100;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: color .2s ease;
+        &:hover {
+          color: #bf1e2e;
+        }
+      }
+      &:not(.footer_navigator_logo) {
+        a::after {
+          content: "";
+          left: 50%;
+          position: absolute;
+          width: 0;
+          bottom: -10px;
+          height: 1px;
+          background: #bf1e2e;
+          //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+          transition: all .3s ease;
+        }
+        a:hover:after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.flogo {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: -30px;
+}
+.more-information-btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 4em;
+  background-image: none;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+  height: 70px;
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: .14em;
+  transition: all 1s cubic-bezier(.165, .84, .44, 1);
+  border: 3px solid #fff;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    background: url(/images/ico_arrow_01.svg) 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in-out;
+    width: 14px;
+    height: 22px;
+  }
+  &:hover {
+    background-color: #ffffff;
+    color: #263238;
+    &:after {
+      background: url(/images/ico_arrow_06.svg) no-repeat 50% 50%;
+    }
+  }
+}

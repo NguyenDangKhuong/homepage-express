@@ -1,0 +1,55 @@
+h3{
+  color: #e50012;
+}
+
+.staff-top-background{
+  background: url("/images/staff_top_background.jpg") top left no-repeat;
+  height: 700px;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.member{
+  padding-top: 100px;
+  .member-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 20px auto 0;
+    width: 93%;
+    grid-gap: 15px;
+    padding-bottom: 40px;
+    .member-item{
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      .member-photo{
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        img{
+          max-width: 100%;
+        }
+        &:hover > .member-photo-hover{
+          opacity: 1;
+        }
+        .member-photo-hover{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+          font-size: 2.5rem;
+          text-align: center;
+          opacity: 0;
+          transition: all .3s ease;
+        }
+      }
+    }
+  }
+}

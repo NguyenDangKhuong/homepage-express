@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<%- include('../fragment/head') %>
+<body>
+<div class="l-container">
+    <%- include('../fragment/loading') %>
+    <%- include('../fragment/header') %>
+    <div class="l-contents">
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <div class="flex">
+                <div class="world-branch" data-aos="fade-right">
+                    <div id="world_map" class="world-branch-map"></div>
+                </div>
+                <form action="/" enctype="multipart/form-data" id="contact-form" method="post" data-aos="fade-left">
+                    <div class="col-sm-12 textboxholders">
+                        <input type="text"
+                               class="contact-textbox" value=""
+                               maxlength="500" placeholder="Name"
+                        />
+                        <input type="text"
+                               class="contact-textbox" value=""
+                               maxlength="500" placeholder="Email"
+                        />
+                        <input type="text"
+                               class="contact-textbox" value=""
+                               maxlength="500" placeholder="Phone number"
+                        />
+                        <div class="input-file">
+                            <input id="txt" type="text" class="file" value="Click to choose your resume"
+                                   onclick="javascript:document.getElementById('file').click();">
+                            <input id="file" type="file" name="file" style='visibility: hidden;'
+                                   name="img" onchange="ChangeText(this, 'txt');"/>
+                            <label id="file-error" class="error" for="file"></label>
+                        </div>
+                        <textarea class="contact-textbox-area" placeholder="Message" rows="20"></textarea>
+                        <input type="submit" class="submit-btn"
+                               value="Submit"
+                               name="submitbtn"/>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <%- include('../fragment/footer') %>
+</div>
+<%- include('../fragment/common-scripts') %>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/filesize/3.5.11/filesize.min.js"></script>
+<script src="js/components/worldBranch.js"></script>
+<script>
+  function initMap() {
+    var jpnOffice = {lat: 35.666979, lng: 139.705599}
+    var vnOffice = {lat: 10.799215, lng: 106.722677}
+    var center = {lat: (jpnOffice.lat + vnOffice.lat) / 2, lng: (jpnOffice.lng + vnOffice.lng) / 2}
+    var branchMap = new google.maps.Map(document.getElementById('world_map'), {center: center, zoom: 3, styles: []});
+
+    var jpnContent = '<h3 class="service-group">asoview! JAPAN</h3><p class="text-left">2 Chome-7-7 Jingumae, Shibuya, Tokyo 150-0001, Japan<br />Tel:+813 - 5413 - 7784</p>';
+    var jpnInfoWindow = new google.maps.InfoWindow({content: jpnContent});
+    var jpnMarker = new google.maps.Marker({position: jpnOffice, map: branchMap, title: 'Japan office'});
+    jpnMarker.addListener('click', function() {jpnInfoWindow.open(branchMap, jpnMarker);});
+
+    var vnContent = '<h3 class="service-group">asoview! VIET NAM</h3><p class="text-left">3th Floor EBM Tower, 394 Ung Van Khiem, Ward 25, Binh Thanh Dist, Ho Chi Minh City, Viet Nam<br />Tel: +880172-1031001</p>';
+    var vnInfoWindow = new google.maps.InfoWindow({content: vnContent});
+    var vnMarker = new google.maps.Marker({position: vnOffice, map: branchMap, title: 'Viet Nam office'});
+    vnMarker.addListener('click', function() {vnInfoWindow.open(branchMap, vnMarker);});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGO0Ii-UQV8ippAkXdPHkKU2NxMoU69LA&callback=initMap" async defer></script>
+</body>
+</html>

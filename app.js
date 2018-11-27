@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var i18n = require("i18n");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -37,5 +38,14 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.use(i18n.init);
+
+i18n.configure({
+  locales:['en', 'vi'],
+  directory: __dirname + '/locales',
+  cookie: 'lang',
+});
+
 
 module.exports = app;

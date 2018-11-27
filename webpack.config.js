@@ -38,6 +38,9 @@ module.exports = [
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
+          cacheDirectory: true,
+          presets: ['es2015', 'react'],
+          plugins: ['transform-class-properties']
         },
       ],
     },

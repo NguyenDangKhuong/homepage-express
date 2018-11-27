@@ -29,7 +29,6 @@ export default class Language extends React.Component{
     })
   }
 
-
   render(){
     let {languageTitle} = this.state
 

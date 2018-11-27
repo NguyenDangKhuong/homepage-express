@@ -6,7 +6,8 @@
     "client": "webpack-dev-server --open --config webpack.config.js --mode development",
     "server": "nodemon ./bin/www",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm run dev"
+    "heroku-postbuild": "npm run dev",
+    "npm start": "npm run dev"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

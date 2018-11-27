@@ -7,7 +7,7 @@
     "server": "nodemon ./bin/www",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm run dev",
-    "npm start": "npm run dev",
+    "start": "npm run dev",
     "build": "npm run dev"
   },
   "dependencies": {

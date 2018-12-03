@@ -47,5 +47,8 @@ i18n.configure({
   cookie: 'lang',
 });
 
+var greeting = i18n.__('About Us')
+console.log(greeting)
+
 
 module.exports = app;

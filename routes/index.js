@@ -66,6 +66,16 @@ router.get('/services', function (req, res, next) {
 })
 
 
+// change language
+
+router.get('/change-lang/:lang', (req, res) => {
+  res.cookie('lang', req.params.lang, { maxAge: 900000 });
+  res.redirect('back');
+  res.send(res.__('About Us'));
+  var greeting = res.__('Hello')
+})
+
+
 // nodeMailer
 var nodemailer = require('nodemailer'); // khai báo sử dụng module nodemailer
 router.post('/send', function (req, res, next) {

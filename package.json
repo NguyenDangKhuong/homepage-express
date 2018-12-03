@@ -9,7 +9,8 @@
     "build:server": "NODE_ENV=production node ./bin/www",
     "dev": "concurrently --kill-others \"npm run dev:server\" \"npm run dev:client\"",
     "build": "concurrently --kill-others \"npm run build:server\" \"npm run build:client\"",
-    "heroku-postbuild": "npm run build:server"
+    "heroku-postbuild": "npm run build:client",
+    "start":"NODE_ENV=production node ./bin/www"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",

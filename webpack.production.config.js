@@ -65,7 +65,13 @@ module.exports = [
           use: [
             'style-loader',
             'css-loader',
-            MiniCssExtractPlugin.loader
+            MiniCssExtractPlugin.loader,
+            {
+              loader: "style-loader/url"
+            },
+            {
+              loader: "file-loader"
+            }
           ]
         },
         {

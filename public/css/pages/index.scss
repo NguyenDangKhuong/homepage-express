@@ -2,10 +2,9 @@
   background-color: white;
 }
 .top-background {
-  background: url("https://i.imgur.com/MT9peWi.jpg");
   height: 550px;
-  background-position: center;
-  background-size: cover;
+  background-position: center !important;
+  background-size: cover !important;
   width: 0%;
   position: relative;
   left: 20%;
@@ -199,7 +198,7 @@
       display: block;
     }
     &-background {
-      background: url("/images/product_background.jpg");
+      background: url("https://i.imgur.com/mHSbFNU.jpg");
       height: 550px;
       background-position: center;
       background-size: cover;

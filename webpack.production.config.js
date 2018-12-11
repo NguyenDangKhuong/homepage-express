@@ -47,6 +47,12 @@ module.exports = [
         pages: path.join(__dirname, 'js/pages'),
       },
     },
+    optimization: {
+      minimize: true,
+      minimizer: [new UglifyJsPlugin({
+        include: /\.min\.js$/
+      })]
+    },
     devtool: 'source-map',
   },
 

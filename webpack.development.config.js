@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 const glob = require('glob')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 const jsEntries = {}
@@ -19,13 +20,6 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = [
   {
-    // optimization: {
-    //   splitChunks: {
-    //     name: 'commons',
-    //     filename: 'commons.js',
-    //     minChunks: 3,
-    //   }
-    // },
     entry: jsEntries,
     mode: 'development',
     output: {
@@ -58,6 +52,12 @@ module.exports = [
           secure: false,
         },
       },
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [new UglifyJsPlugin({
+        include: /\.min\.js$/
+      })]
     },
     devtool: 'source-map',
   },

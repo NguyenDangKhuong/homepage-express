@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 const glob = require('glob')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 const jsEntries = {}

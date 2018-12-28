@@ -3,6 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
+  // console.log(res.__('Hello i18n'));
   res.render('page/index',
     {
       title: 'Asoview Viet Nam',
@@ -65,15 +66,6 @@ router.get('/services', function (req, res, next) {
     })
 })
 
-
-// change language
-
-router.get('/change-lang/:lang', (req, res) => {
-  res.cookie('lang', req.params.lang, { maxAge: 900000 });
-  res.redirect('back');
-  res.send(res.__('About Us'));
-  var greeting = res.__('Hello')
-})
 
 
 // nodeMailer

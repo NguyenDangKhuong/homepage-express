@@ -16,21 +16,21 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
-app.use('/images', express.static(path.join(__dirname, 'public','images')))
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -40,16 +40,27 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.use(i18n.init);
+// change language
 
-i18n.configure({
-  locales:['en', 'vi'],
-  directory: __dirname + '/locales',
-  cookie: 'lang',
-});
 
-var greeting = i18n.__('About Us')
-console.log(greeting)
+// i18n.configure({
+//   locales: ['en', 'vi'],
+//   directory: __dirname + '/locales',
+//   defaultLocale: 'en',
+//   cookie: 'lang',
+//   api: {
+//     '__': 't'
+//   }
+// });
+//
+// app.get('/change-lang/:lang', (req, res) => {
+//   res.cookie('lang', req.params.lang, { maxAge: 900000 });
+//   res.redirect('back');
+//   console.log('log About Us',i18n.__("About Us"))
+// })
 
+// app.use(cookieParser());
+
+// app.use(i18n.init);
 
 module.exports = app;

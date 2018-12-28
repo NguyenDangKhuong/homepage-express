@@ -1,1 +1,2 @@
-homepage của Khương tự làm 100%
+# asoviewvn-homepage
+アソビューベトナムホームページ用のレポ

@@ -15,26 +15,26 @@
                     <div class="col-sm-12 textboxholders">
                         <input type="text"
                                class="contact-textbox" value=""
-                               maxlength="500" placeholder="Name"
+                               maxlength="500" placeholder="<%= t('Name')%>"
                         />
                         <input type="text"
                                class="contact-textbox" value=""
-                               maxlength="500" placeholder="Email"
+                               maxlength="500" placeholder="<%= t('Email')%>"
                         />
                         <input type="text"
                                class="contact-textbox" value=""
-                               maxlength="500" placeholder="Phone number"
+                               maxlength="500" placeholder="<%= t('Phone Number')%>"
                         />
                         <div class="input-file">
-                            <input id="txt" type="text" class="file" value="Click to choose your resume"
+                            <input id="txt" type="text" class="file" value="<%= t('Click to choose your resume')%>"
                                    onclick="javascript:document.getElementById('file').click();">
                             <input id="file" type="file" name="file" style='visibility: hidden;'
                                    name="img" onchange="ChangeText(this, 'txt');"/>
                             <label id="file-error" class="error" for="file"></label>
                         </div>
-                        <textarea class="contact-textbox-area" placeholder="Message" rows="20"></textarea>
+                        <textarea class="contact-textbox-area" placeholder="<%= t('Message')%>" rows="20"></textarea>
                         <input type="submit" class="submit-btn"
-                               value="Submit"
+                               value="<%= t('Submit')%>"
                                name="submitbtn"/>
                     </div>
                 </form>

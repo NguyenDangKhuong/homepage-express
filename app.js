@@ -20,6 +20,8 @@ i18n.configure({
     }
 });
 
+app.use(cookieParser());
+
 app.use(i18n.init);
 
 // view engine setup
@@ -29,7 +31,7 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/images', express.static(path.join(__dirname, 'public', 'images')))
 
@@ -37,10 +39,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.get('/change-lang/:lang', (req, res) => {
-    console.log(req.params.lang)
     res.cookie('lang', req.params.lang, { maxAge: 900000 });
     res.redirect('back');
-    // console.log('log About Us',i18n.__("About Us"))
 })
 
 // catch 404 and forward to error handler
@@ -58,8 +58,6 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-// change language
 
 
 module.exports = app;

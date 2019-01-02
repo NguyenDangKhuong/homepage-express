@@ -1,8 +1,17 @@
 {
-	"About Us": "About Us",
-	"Service": "Service",
-	"News": "News",
-	"Staff": "Staff",
-	"Careers": "Careers",
-	"Contact": "Contact"
+  "ABOUT US": "ABOUT US",
+  "SERVICE": "SERVICE",
+  "NEWS": "NEWS",
+  "STAFF": "STAFF",
+  "CAREERS": "CAREERS",
+  "CONTACT": "CONTACT",
+  "SERVICES": "SERVICES",
+  "ASOVIEW MISSION": "ASOVIEW MISSION",
+  "ASOVIEW VALUE": "ASOVIEW VALUE",
+  "ASOVIEW PRODUCT": "ASOVIEW PRODUCT",
+  "For you":"For you",
+  "Challenge":"Challenge",
+  "No.1":"No.1",
+  "Welcome to Asoview":"Welcome to Asoview",
+  "More Information": "More Information"
 }

@@ -1,8 +1,17 @@
 {
-	"About Us": "Về chúng tôi",
-	"Service": "Dich vụ",
-	"News": "Tin tức",
-	"Staff": "Nhân viên",
-	"Careers": "Tuyển dụng",
-	"Contact": "Liên hệ"
+  "ABOUT US": "VỀ CHÚNG TÔI",
+  "SERVICE": "DỊCH VỤ",
+  "NEWS": "TIN TỨC",
+  "STAFF": "NHÂN VIÊN",
+  "CAREERS": "TUYỂN DỤNG",
+  "CONTACT": "LIÊN HỆ",
+  "SERVICES": "SERVICES",
+  "ASOVIEW MISSION":"Nhiệm vụ của chúng tôi",
+  "ASOVIEW VALUE":"Giá trị của chúng tôi",
+  "ASOVIEW PRODUCT":"Sản phẩm của chúng tôi",
+  "For you":"Dành cho bạn",
+  "Challenge":"Thách thức",
+  "No.1":"Số 1",
+  "Welcome to Asoview":"Chào mừng đến với Asoview",
+  "More Information": "Thêm thông tin"
 }

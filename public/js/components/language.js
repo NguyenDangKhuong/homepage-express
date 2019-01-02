@@ -65,7 +65,7 @@ export default class Language extends React.Component {
             <a className="dropdown-item" href="/change-lang/vi" onClick={this.changeVietnamese}>
               <div className="language-title">Tiếng Việt</div>
             </a>
-            <a className="dropdown-item" href="#" onClick={this.changeJapanese}>
+            <a className="dropdown-item" href="/change-lang/jp" onClick={this.changeJapanese}>
               <div className="language-title">日本語</div>
             </a>
           </div>

@@ -7,7 +7,7 @@ export default class Language extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      languageTitle: <span className="language-title-icons">EN</span>
+      languageTitle: <span className="language-title-icons">VN</span>
     }
   }
 

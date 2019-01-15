@@ -10,8 +10,10 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+
+//config for i18n
 i18n.configure({
-    locales: ['en', 'vi'],
+    locales: ['en', 'vi','jp'],
     directory: __dirname + '/locales',
     defaultLocale: 'en',
     cookie: 'lang',
@@ -22,7 +24,9 @@ i18n.configure({
 
 app.use(cookieParser());
 
+//init i18n
 app.use(i18n.init);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,6 +42,7 @@ app.use('/images', express.static(path.join(__dirname, 'public', 'images')))
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+// set route for and save cookie for i18n
 app.get('/change-lang/:lang', (req, res) => {
     res.cookie('lang', req.params.lang, { maxAge: 900000 });
     res.redirect('back');

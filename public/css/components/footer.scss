@@ -1,10 +1,15 @@
 //footer CSS
 
 footer {
+  .container{
+    h4{
+      color: white;
+    }
+  }
   &.home {
-    padding: 6% 0 0;
+    padding: 3% 0 0;
     text-align: center;
-    background: url(https://www.asoview.co.jp/wp-content/uploads/bg_contact_01.jpg) center center no-repeat;
+    background: url(/images/footer-background.jpg) center center no-repeat;
     background-size: cover;
     margin-top: 20px;
     position: relative;
@@ -24,8 +29,8 @@ footer {
     margin: auto;
     width: 35%;
   }
-  h2 {
-    font: normal 35px ralewaymedium;
+  h4 {
+    font: normal 25px larger;
     color: #e50012;
     margin: 0;
     padding: 0 0 18px;
@@ -71,7 +76,7 @@ footer {
 }
 .footer_btm {
   margin-top: 0;
-  padding-top: 5%;
+  padding-top: 2%;
   position: relative;
   ul {
     margin: 0;
@@ -125,9 +130,9 @@ footer {
   }
   p {
     font: normal 14px ralewayregular;
-    color: #9b9b9b;
+    color: #d4d1d1;
     margin: 0;
-    padding: 16px 0;
+    padding: 10px 0;
     a {
       position: relative;
       color: #9b9b9b;

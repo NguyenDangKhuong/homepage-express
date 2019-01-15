@@ -34,11 +34,11 @@
   align-items: center;
   justify-content: space-around;
   li {
-    color: #e50012;
+    color: #000000;
     font-family: -webkit-body;
     font-weight: 900;
     &:hover {
-      color: #ff505d;
+      color: #5d5a5a;
     }
   }
 }
@@ -125,7 +125,7 @@
 }
 
 .language-title {
-  color: #e50012;
+  color: #000000;
   font-size: 15px;
   &-icons {
     color: #e50012;

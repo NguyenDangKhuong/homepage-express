@@ -7,67 +7,87 @@
     <%- include('../fragment/header') %>
     <div class="l-contents">
         <article class="content">
-            <div class="top-background" style="background: url('https://i.imgur.com/eK3BSVY.jpg')">
+            <div class="top-background" style="background: url('images/company-banner.jpg')">
                 <div class="top-background-img" style="background: url('https://i.imgur.com/puAzhcp.png')"></div>
                 <div class="top-background-img" style="background: url('https://i.imgur.com/r8hgH8f.png')"></div>
             </div>
             <img class="asoview_img asoview_img-a " src="images/ico_a_01.svg">
             <div class="main-container">
-                <h5>-<%= t('ASOVIEW MISSION')%>-</h5>
+                <h5>- <%= t('ASOVIEW MISSION') %> -</h5>
                 <section class="section mission">
                     <div class="mission-wrapper" data-aos="fade-left">
                         <div class="ceo-img-wrapper">
                             <div class="ceo-img" style="background: url('https://i.imgur.com/BRpW9DO.jpg')"></div>
                         </div>
                         <div class="ceo-message">
-                            <h4>ワクワクを、すべての人に</h4>
+                            <h4><%= t('CEO message title') %></h4>
 
-                            <p> 人が幸せに生きていくために必要なことは、「物の充足」と「心の充足」です。</p>
-
-                            <p> 私たちは、物の満たされた時代の中で、余暇時間の選択肢を最大化し、</p>
-
-                            <p> その質を向上させることで心の充足を実現し、笑顔を増やし、幸せな社会の実現をしていきたいと考えています。</p>
+                            <p> <%= t('CEO message') %></p>
                         </div>
                     </div>
                 </section>
                 <img class="asoview_img asoview_img-s " src="images/ico_s_02.svg">
                 <section class="section value">
-                    <h5>-<%= t('ASOVIEW VALUE')%>-</h5>
+                    <h5>- <%= t('ASOVIEW VALUE') %> -</h5>
                     <div class="value-container">
-                        <div class="test" id="test"></div>
-                        <div class="value-for-you">
-                            <div class="value-item">
-                                <div class="value-img-wrapper">
-                                    <img class="value-img" style="background: url('https://i.imgur.com/w9KhsOx.jpg')">
+                        <div class="value-wrapper value-for-you for-you" data-aos="fade-right">
+                            <div class="flex">
+                                <div class="value-item">
+                                    <div class="value-img-wrapper">
+                                        <img class="value-img"
+                                             style="background: url('https://i.imgur.com/w9KhsOx.jpg')">
+                                    </div>
                                 </div>
-                                <div class="value-title">
-                                    <p><%= t('For you')%></p>
-                                    <p>すべては誰かのために</p>
+                                <div class="value-content">
+                                    <div class="value-title">
+                                        <p><b><%= t('For you') %></b></p>
+                                        <p>Giá trị của công ty có được thông qua sự cống hiến cho một ai đó . Chúng ta
+                                            đâu chỉ sống riêng cho mình, mà còn phải biết quan tâm tới những người khác
+                                            . Đó chính là sự “cho” và “nhận” trong cuộc đời này , hạnh phúc của người
+                                            khác chính là hạnh phúc của bản thân . Với phương châm đó chúng tôi hành
+                                            động suy nghĩ nổ lực làm việc , quan tâm chân thành , đặt giá trị của bạn ,
+                                            sự tự do sáng kiến làm đầu .</p>
+                                    </div>
                                 </div>
                             </div>
-                            <img class="asoview_img asoview_img-o " src="images/ico_o_02.svg">
                         </div>
+                        <img class="asoview_img asoview_img-o " src="images/ico_o_02.svg">
                         <img class="asoview_img asoview_img-v " src="images/ico_v_01.svg">
-                        <div class="value-challenge">
-                            <div class="value-item">
-                                <div class="value-img-wrapper">
-                                    <img class="value-img" style="background: url('https://i.imgur.com/Og6XM7K.jpg')">
+                        <img class="asoview_img asoview_img-i " src="images/ico_i_01.svg">
+                        <div class="value-wrapper value-challenge challenge" data-aos="fade-left">
+                            <div class="flex">
+                                <div class="value-content">
+                                    <div class="value-title">
+                                        <p><b><%= t('Challenge') %></b></p>
+                                        <p>Không ngừng thử thách
+                                            Là những cánh chim đầu đàn không sợ nguy hiểm mở đầu thị trường . Không
+                                            ngừng thử thách với nhiệt huyết dữ dội đối với tương lai sáng tạo bằng chính
+                                            đôi bàn tay của mình .</p>
+                                    </div>
                                 </div>
-                                <div class="value-title">
-                                    <p><%= t('Challenge')%></p>
-                                    <p>挑戦し続ける</p>
+                                <div class="value-item">
+                                    <div class="value-img-wrapper">
+                                        <img class="value-img"
+                                             style="background: url('https://i.imgur.com/Og6XM7K.jpg')">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <img class="asoview_img asoview_img-i " src="images/ico_i_01.svg">
-                        <div class="value-no1">
-                            <div class="value-item">
-                                <div class="value-img-wrapper">
-                                    <img class="value-img" style="background: url('https://i.imgur.com/SLkgl0Y.jpg')">
+                        <div class="value-wrapper value-no1 no1" data-aos="fade-right">
+                            <div class="flex">
+                                <div class="value-item">
+                                    <div class="value-img-wrapper">
+                                        <img class="value-img" style="background: url('/images/photo-no1.jpg')">
+                                    </div>
                                 </div>
-                                <div class="value-title">
-                                    <p><%= t('No.1')%></p>
-                                    <p>ナンバーワンにこだわる</p>
+                                <div class="value-content">
+                                    <div class="value-title">
+                                        <p><b><%= t('No.1') %></b></p>
+                                        <p>Mục tiêu trở thành vị trí số 1
+                                            Dù có đối mặt với cản trở khó khăn cũng không nản lòng . Bên cạnh đó luôn
+                                            đồng hành với bạn bè , kiên nhẫn nỗ lực không ngừng , giải quyết khó khăn
+                                            với tinh thần team work cùng nhau đạt được mục tiêu No.1 . </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +95,7 @@
                     </div>
                 </section>
                 <section class="section product">
-                    <h5>-<%= t('ASOVIEW PRODUCT')%>-</h5>
+                    <h5>- <%= t('ASOVIEW PRODUCT') %> -</h5>
                     <img class="asoview_img asoview_img-w " src="images/ico_w_01.svg">
                     <div class="product-background">
                     </div>
@@ -85,10 +105,18 @@
                             <div>Technology & Creative</div>
                         </div>
                         <ul class="product-list">
-                            <a href="http://asoview.com/"><li style="background: url('https://i.imgur.com/ZbYAl4B.png')"></li></a>
-                            <a href="https://asoview-news.com/"><li style="background: url('https://i.imgur.com/lO1lP3H.png')"></li></a>
-                            <a href="https://asoview.gift/"><li style="background: url('https://i.imgur.com/Tcu2GA7.png')"></li></a>
-                            <a href="https://asoview-trip.com/"><li style="background: url('/images/asoviewtrip_logo.svg')"></li></a>
+                            <a href="http://asoview.com/">
+                                <li style="background: url('https://i.imgur.com/ZbYAl4B.png')"></li>
+                            </a>
+                            <a href="https://asoview-news.com/">
+                                <li style="background: url('https://i.imgur.com/lO1lP3H.png')"></li>
+                            </a>
+                            <a href="https://asoview.gift/">
+                                <li style="background: url('https://i.imgur.com/Tcu2GA7.png')"></li>
+                            </a>
+                            <a href="https://asoview-trip.com/">
+                                <li style="background: url('/images/asoviewtrip_logo.svg')"></li>
+                            </a>
                         </ul>
                     </div>
                 </section>

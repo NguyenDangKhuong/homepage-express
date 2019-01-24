@@ -1,7 +1,138 @@
-.service{
+.service {
   margin-bottom: 50px;
+  &-top_background {
+    background: url("https://i.imgur.com/qY9lpLO.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+  }
 }
-.service-container{
+
+.service-container {
   width: 90%;
   margin: auto;
+  .our-service_title {
+    font-size: 30px;
+    border-bottom: 1px solid;
+    width: 13%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .our-service_content {
+    width: 70%;
+    margin: auto;
+  }
+  .our-service_header {
+    margin-top: 30px;
+    background-color: #e50012;
+    a {
+      color: white;
+    }
+  }
+  .internet-service {
+    .marketing-promotion_title{
+      width: 30%;
+    }
+    &_title {
+      font-size: 20px;
+      color: #e50012;
+      border-top: 1px solid #e50012;
+      border-bottom: 1px solid #e50012;
+      width: 20%;
+      margin: auto;
+      margin-top: 40px;
+    }
+    &_img {
+      background-size: cover !important;
+      background-position: center !important;
+      width: 60%;
+      height: 500px;
+      &-asoview {
+        background: url("https://i.imgur.com/36MdQRA.jpg");
+
+      }
+      &-new {
+        background: url("https://i.imgur.com/Mq1nPVJ.jpg");
+      }
+      &-trip {
+        background: url("https://i.imgur.com/7YTkjus.jpg");
+      }
+      &-gift {
+        background: url("https://i.imgur.com/vc2kYFF.png");
+      }
+      &-ad-platform {
+        background: url("https://i.imgur.com/eD2aQoH.jpg");
+      }
+      &-promotion {
+        background: url("https://i.imgur.com/QwHkzNa.jpg");
+      }
+      &-satsuki{
+        background: url("https://i.imgur.com/eLgTFPI.jpg");
+      }
+      &-new-platform{
+        background: url("https://i.imgur.com/3xT17kR.jpg");
+      }
+      &-area-gate{
+        background: url("https://i.imgur.com/2VLFa4T.jpg");
+      }
+    }
+    &_wrapper {
+      display: flex;
+      padding-top: 50px;
+    }
+    &_content {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      &-wrapper-right {
+        margin-left: 10px;
+        padding: 10px;
+      }
+      &-wrapper-left {
+        margin-right: 10px;
+        padding: 10px;
+      }
+    }
+  }
+
+
+  .consulting{
+    margin-top: 50px;
+    &_title{
+      font-size: 20px;
+      color: #e50012;
+      border-top: 1px solid #e50012;
+      border-bottom: 1px solid #e50012;
+      width: 20%;
+      margin: auto;
+    }
+    &_content{
+      display: flex;
+      width: 70%;
+      margin: auto;
+      color: white;
+      margin-top: 20px;
+      div{
+        padding: 10px;
+        &:nth-child(1){
+          background: #00bfa5;
+        }
+        &:nth-child(2){
+          background: #4fc3f7;
+        }
+        &:nth-child(3){
+          background: #ffa726;
+        }
+        &:nth-child(4){
+          background: #8bc34a;
+        }
+        &:nth-child(5){
+          background: #f06292;
+        }
+        &:nth-child(6){
+          background: #cddc39;
+        }
+      }
+    }
+  }
 }

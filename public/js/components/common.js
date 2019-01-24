@@ -27,7 +27,7 @@ $(window).scroll(function () {
     }
   }
 
-  scrollAnimate('footer', 'animate-scroll-bottom')
+  // scrollAnimate('footer', 'animate-scroll-bottom')
 })
 
 window.onload = function () {

@@ -30,8 +30,8 @@ $(window).scroll(function () {
   scrollAnimate('challenge', 'animate-scroll-bottom')
   scrollAnimate('no1', 'animate-scroll-bottom')
   scrollAnimate('product-background','animate-width-right-to-left')
-  scrollAnimate('our-product', 'animate-scroll-bottom')
-  scrollAnimate('product-list', 'animate-fade-in')
+  // scrollAnimate('our-product', 'animate-scroll-bottom')
+  // scrollAnimate('product-list', 'animate-fade-in')
 
 })
 

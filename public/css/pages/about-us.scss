@@ -1,55 +1,164 @@
 .about-us {
-  padding-top: 100px;
+  margin-top: 50px;
+  width: 80%;
+  margin: auto;
+  &_title {
+    margin-top: 20px;
+  }
   &_top-background {
     color: white;
-    background: url("https://i.imgur.com/rdIslCU.jpg");
-    height: 600px;
+    background: url("https://i.imgur.com/B3JVfRo.jpg");
+    height: 480px;
     background-size: cover;
-    width: 90%;
+    width: 100%;
     position: relative;
     background-position: center;
     display: flex;
     align-items: center;
-    padding-left: 150px;
     margin: auto;
-    &_motto {
-      border-radius: 5px;
-      height: 400px;
-      width: 25%;
-      background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  h3 {
+    color: #9c9c9c;
+  }
+
+  .left {
+    margin-left: 10%;
+  }
+
+  &:last-child {
+    margin-bottom: 50px !important;
+  }
+
+  .formation {
+    padding: 20px 0;
+    margin-bottom: 150px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    p:nth-child(1) {
+      font-size: 19px;
+      padding-bottom: 10px;
+    }
+    p:nth-child(2){
+      font-size: 18px;
+    }
+  }
+
+  .our-mission {
+    margin-bottom: 100px !important;
+    &-text {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      h3{
-        padding-left: 30px;
-        padding-top: 5px;
+      align-items: center;
+      &_child {
+        text-align: left;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
       }
-      p{
-        padding: 0px 30px;
+    }
+    &-image_left {
+      img {
+        width: 96%;
+        &:nth-child(1) {
+          margin-bottom: 10px;
+          height: 245px;
+        }
+        &:nth-child(2){
+          height: 245px;
+        }
+      }
+    }
+    &-image_right {
+      width: 45%;
+      height: 500px;
+
+    }
+  }
+
+  .company-info {
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 15px;
+    font-family:  iragino Kaku Gothic Pro;
+    h3{
+      padding-bottom: 20px;
+    }
+    table{
+      border-collapse: collapse;
+      tr{
+        &:last-child{
+          border-bottom: 1px solid #cfcfcf;
+        }
+      }
+      td{
+        border-top: 1px solid #cfcfcf;
+        padding: 15px 0;
+        &:first-child{
+          border-right: none;
+          padding-left: 10px;
+        }
+        &:last-child{
+          border-left: none;
+        }
       }
     }
   }
-  img{
-    width: 75%;
-    height: 400px;
+
+  .achievements {
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 15px !important;
+    font-family:  iragino Kaku Gothic Pro;
+    h3{
+      padding-bottom: 20px;
+    }
+    p{
+      border-top: 1px solid #cfcfcf;
+      padding: 15px 0;
+      padding-left: 10px;
+      &:last-child{
+        border-bottom: 1px solid #cfcfcf;
+      }
+    }
+    i{
+      font-size: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
-  h3{
-    color: #e50012;
-  }
-  .left{
-    margin-left: 10%;
-  }
-  .mt-70{
-    margin-top: 70px !important;
-  }
-  .column-center{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 70px !important;
-  }
-  &:last-child{
-    margin-bottom: 50px!important;
+
+  .career-info {
+    &-wrapper {
+      width: 80%;
+      margin: auto;
+      a {
+        color: #4c4949;
+      }
+
+    }
+    &-img {
+      width: 100%;
+      height: 300px;
+    }
+    &-title {
+      width: 80%;
+      transform: translate(0%, -50%);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      &_member{
+        background: #dce858;
+      }
+      &_career{
+        background: #f1749f;
+      }
+      &:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
   }
 }

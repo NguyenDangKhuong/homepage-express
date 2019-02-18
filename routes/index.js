@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
   // console.log(res.__('Hello i18n'));
@@ -8,7 +9,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Asoview Viet Nam',
       linkCss: '/css/pages/index.min.css',
-      linkJS:'js/pages/index.js'
+      linkJS: 'js/pages/index.js'
     });
 });
 
@@ -17,7 +18,7 @@ router.get('/staff', function (req, res, next) {
     {
       title: 'Staff of Company',
       linkCss: '/css/pages/staff.min.css',
-      linkJS:'js/pages/staff.js'
+      linkJS: 'js/pages/staff.js'
     })
 })
 
@@ -26,8 +27,12 @@ router.get('/contact', function (req, res, next) {
     {
       title: 'Contact Us',
       linkCss: '/css/pages/contact.min.css',
-      linkJS:'js/pages/contact.js'
+      linkJS: 'js/pages/contact.js'
     })
+})
+
+router.get('*', function (err,req, res, next) {
+  console.log(err.stack)
 })
 
 router.get('/career', function (req, res, next) {
@@ -35,8 +40,13 @@ router.get('/career', function (req, res, next) {
     {
       title: 'Career',
       linkCss: '/css/pages/career.min.css',
-      linkJS:'js/pages/career.js'
+      linkJS: 'js/pages/career.js'
     })
+})
+
+router.get('/career/backend', function (err, req, res, next) {
+  console.log(err.stack)
+  res.render('page/career/backend')
 })
 
 router.get('/about-us', function (req, res, next) {
@@ -44,7 +54,7 @@ router.get('/about-us', function (req, res, next) {
     {
       title: 'About Us',
       linkCss: '/css/pages/about-us.min.css',
-      linkJS:'js/pages/about-us.js'
+      linkJS: 'js/pages/about-us.js'
     })
 })
 
@@ -53,7 +63,7 @@ router.get('/news', function (req, res, next) {
     {
       title: 'Asoview New',
       linkCss: '/css/pages/news.min.css',
-      linkJS:'js/pages/news.js'
+      linkJS: 'js/pages/news.js'
     })
 })
 
@@ -62,7 +72,7 @@ router.get('/services', function (req, res, next) {
     {
       title: 'Services',
       linkCss: '/css/pages/services.min.css',
-      linkJS:'js/pages/services.js'
+      linkJS: 'js/pages/services.js'
     })
 })
 

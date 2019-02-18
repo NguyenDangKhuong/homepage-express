@@ -1,55 +1,116 @@
-h3{
+h3 {
   color: #e50012;
 }
 
-.staff-top-background{
-  background: url("https://i.imgur.com/BgNJayQ.jpg") top left no-repeat;
-  height: 700px;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-  background-attachment: fixed;
-}
-
-.member{
-  padding-top: 100px;
-  .member-container{
+.member {
+  &-title{
+    .asoview-member{
+      font-size: 30px;
+      text-decoration: underline;
+      margin-bottom: 40px;
+      padding: 40px 0;
+    }
+  }
+  &-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     margin: 20px auto 0;
     width: 93%;
     grid-gap: 15px;
     padding-bottom: 40px;
-    .member-item{
-      font-size: 30px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      .member-photo{
-        font-size: 30px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        height: 100%;
-        img{
-          max-width: 100%;
-        }
-        &:hover > .member-photo-hover{
-          opacity: 1;
-        }
-        .member-photo-hover{
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 1;
-          font-size: 2.5rem;
-          text-align: center;
-          opacity: 0;
-          transition: all .3s ease;
-        }
-      }
+    grid-row-gap: 35px;
+  }
+  &-item {
+    font-size: 30px;
+    position: relative;
+  }
+  &-position{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 70px;
+    bottom: 25px;
+    z-index: 2;
+    padding: 5px;
+    font-size: 25px;
+  }
+  &-photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: all .3s ease;
+    img{
+      height: 333px;
+      width: 333px;
+    }
+  }
+  &-photo {
+    font-size: 30px;
+    position: relative;
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+      height: 333px;
+      width: 333px;
+    }
+    &:hover > .member-photo-hover {
+      opacity: 1;
+    }
+  }
+  &-content{
+    font-size: 15px;
+  }
+  &-name{
+    font-weight: 600;
+    color: #17731b;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  &-hoppy, &-message{
+    text-align: left;
+    padding-left: 45px;
+  }
+
+  .part-of-family{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    height: 400px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+
+    &_wrapper{
+      position: absolute;
+      right: 0;
+      transform: translate(15%,-15%);
+    }
+    &_img{
+      width: 40%;
+    }
+    &_text{
+      bottom: 0;
+      position: absolute;
+      left: 20%;
+      background-color: #f1f1f1;
+      padding: 30px;
+    }
+    &_question{
+      text-align: left;
+      font-weight: 600;
+    }
+    &_answer{
+
+    }
+    &_link{
+      color: #e50012;
+      margin-top: 10px;
     }
   }
 }
+

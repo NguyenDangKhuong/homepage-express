@@ -29,7 +29,7 @@ $(window).scroll(function () {
   scrollAnimate('for-you', 'animate-scroll-bottom')
   scrollAnimate('challenge', 'animate-scroll-bottom')
   scrollAnimate('no1', 'animate-scroll-bottom')
-  scrollAnimate('product-background','animate-width-right-to-left')
+  // scrollAnimate('product-background','animate-width-right-to-left')
   // scrollAnimate('our-product', 'animate-scroll-bottom')
   // scrollAnimate('product-list', 'animate-fade-in')
 

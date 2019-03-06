@@ -1,50 +1,23 @@
 .contact {
   padding: 20px;
-  text-align: center;
-  &-header{
-    padding: 20px 0;
-    font-size: 25px;
-  }
-  &-content{
-    width: 50%;
-    margin: auto;
-    text-align: left;
-    margin-bottom: 20px;
-    i{
-      margin: 0px 5px;
-    }
-  }
-  &-address, &-tel, &-email{
-    padding: 5px 0;
-  }
+  //&:before {
+  //  background-color: #e50012;
+  //  width: 2px;
+  //  height: 50px;
+  //  margin: 0 auto 25px;
+  //  content: '';
+  //  display: block;
+  //}
   .world-branch {
     position: relative;
-    width: 90%;
+    width: 80%;
     height: 500px;
-    margin: auto;
+    margin: 0 20px;
     padding-bottom: 20px;
     &-map {
       width: 100%;
       height: 100%;
     }
-  }
-  #contact-form{
-    width: 80%;
-    margin: auto;
-  }
-  .contact-form-title{
-    padding: 15px 0;
-    font-size: 25px;
-    color: #7f8aea;
-  }
-  .ebm-img-wrapper{
-    position: absolute;
-    bottom: 130px;
-    right: 0;
-  }
-  .ebm-img{
-    height: 300px;
-    width: 200px;
   }
   .input-file {
     width: 100%;
@@ -65,7 +38,7 @@
   &-textbox {
     width: 100%;
     height: 49px;
-    border: 2px solid #e4e4e4;
+    border: 1px solid #e4e4e4;
     font: normal 16px ralewayregular;
     color: #202020;
     border-radius: 2px;
@@ -75,7 +48,7 @@
     &-area {
       width: 100%;
       height: 250px;
-      border: 2px solid #e4e4e4;
+      border: 1px solid #e4e4e4;
       font: normal 16px ralewayregular;
       color: #202020;
       border-radius: 2px;
@@ -87,9 +60,9 @@
     }
   }
   .submit-btn {
-    width: 20%;
+    width: 100%;
     height: 44px;
-    border: 1px solid #7f8aea;
+    border: 1px solid #e50012;
     -webkit-appearance: none;
     cursor: pointer;
     font: normal 13px ralewayregular;
@@ -98,6 +71,6 @@
     line-height: 44px;
     border-radius: 2px;
     transition: all .3s ease;
-    background: #7f8aea;
+    background: #e50012;
   }
 }

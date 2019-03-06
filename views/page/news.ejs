@@ -7,9 +7,6 @@
     <%- include('../fragment/header') %>
     <div class="l-contents">
         <section class="section news">
-            <div class="section-header">
-                <div class="top-header news-header">News</div>
-            </div>
             <div class="news-list">
                 <div class="news-item">
                     <div class="news-item_img news-item_img-established"></div>
@@ -188,25 +185,10 @@
                     </div>
                 </div>
             </div>
-            <ul id="news-list" class="pagination-sm"></ul>
         </section>
     </div>
     <%- include('../fragment/footer') %>
 </div>
 <%- include('../fragment/common-scripts') %>
-<script src="js/components/jquery.twbsPagination.js"></script>
-<script>
-  $('#news-list').twbsPagination({
-    totalPages: 35,
-    visiblePages: 7,
-    first:"<<",
-    prev:"<",
-    next:">",
-    last:">>",
-    onPageClick: function (event, page) {
-      $('#page-content').text('Page ' + page);
-    }
-  });
-</script>
 </body>
 </html>

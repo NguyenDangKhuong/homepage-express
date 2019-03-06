@@ -52,7 +52,6 @@ module.exports = [
           secure: false,
         },
       },
-      historyApiFallback: true,
     },
     optimization: {
       minimize: true,

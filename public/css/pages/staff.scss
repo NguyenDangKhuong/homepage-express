@@ -3,22 +3,21 @@ h3 {
 }
 
 .member {
+  padding-top: 30px;
   &-title{
     .asoview-member{
       font-size: 30px;
       text-decoration: underline;
-      margin-bottom: 40px;
-      padding: 40px 0;
+      padding-bottom: 40px;
     }
   }
   &-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     margin: 20px auto 0;
     width: 93%;
     grid-gap: 15px;
     padding-bottom: 40px;
-    grid-row-gap: 35px;
   }
   &-item {
     font-size: 30px;
@@ -28,11 +27,8 @@ h3 {
     background-color: black;
     color: white;
     position: absolute;
-    right: 70px;
-    bottom: 25px;
-    z-index: 2;
-    padding: 5px;
-    font-size: 25px;
+    right: 0px;
+    bottom: 0px;
   }
   &-photo-hover {
     position: absolute;
@@ -44,10 +40,6 @@ h3 {
     font-size: 2.5rem;
     opacity: 0;
     transition: all .3s ease;
-    img{
-      height: 333px;
-      width: 333px;
-    }
   }
   &-photo {
     font-size: 30px;
@@ -55,8 +47,6 @@ h3 {
     img {
       max-width: 100%;
       border-radius: 50%;
-      height: 333px;
-      width: 333px;
     }
     &:hover > .member-photo-hover {
       opacity: 1;
@@ -69,7 +59,6 @@ h3 {
     font-weight: 600;
     color: #17731b;
     padding: 10px 0;
-    font-size: 20px;
   }
   &-hoppy, &-message{
     text-align: left;

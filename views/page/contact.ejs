@@ -6,60 +6,40 @@
     <%- include('../fragment/loading') %>
     <%- include('../fragment/header') %>
     <div class="l-contents">
-        <div class="section-header">
-            <div class="top-header contact-header">Contact</div>
-        </div>
         <div class="contact">
-            <div class="contact-header">
-                CONTACT INFORMATION
-            </div>
-            <div class="contact-content">
-                <div class="contact-address">
-                    <strong>Address:</strong> 3 level, EBM Tower, 394 Ung Văn Khiêm Street, 25 Ward, Bình Thạnh District, TPHCM
+            <div class="flex">
+                <div class="world-branch" data-aos="fade-right">
+                    <div id="world_map" class="world-branch-map"></div>
                 </div>
-                <div class="contact-tel">
-                    <strong>Tel:</strong><i class="fas fa-phone"></i> 028-7109-9837
-                </div>
-                <div class="contact-email">
-                    <strong>Email:</strong><i class="fas fa-envelope"></i> recruit_vietnam@asoview.co.jp
-                </div>
-            </div>
-            <div class="world-branch" data-aos="fade-right">
-                <div id="world_map" class="world-branch-map"></div>
-                <div class="ebm-img-wrapper">
-                    <img class="ebm-img" src="https://i.imgur.com/Ptmqpqx.jpg">
-                </div>
-            </div>
-            <form action="/send" enctype="multipart/form-data" id="contact-form" method="post" data-aos="fade-up">
-                <div class="contact-form-title">
-                    Contact Form
-                </div>
-                <div class="col-sm-12 textboxholders">
-                    <input type="text"
-                           class="contact-textbox" name="name" value=""
-                           maxlength="500" placeholder="<%= t('Name') %>"
-                    />
-                    <input type="email"
-                           class="contact-textbox" name="email" value=""
-                           maxlength="500" placeholder="<%= t('Email') %>"
-                    />
-                    <input type="text"
-                           class="contact-textbox" name="phone" value=""
-                           maxlength="500" placeholder="<%= t('Phone Number') %>"
-                    />
-                    <div class="input-file">
-                        <input id="txt" type="text" class="file" value="<%= t('Click to choose your resume') %>"
-                               onclick="javascript:document.getElementById('file').click();">
-                        <input id="file" type="file" name="file" style='visibility: hidden;'
-                               name="img" onchange="ChangeText(this, 'txt');"/>
-                        <label id="file-error" class="error" for="file"></label>
+                <form action="/send" enctype="multipart/form-data" id="contact-form" method="post" data-aos="fade-left">
+                    <div class="col-sm-12 textboxholders">
+                        <input type="text"
+                               class="contact-textbox" name="name" value=""
+                               maxlength="500"  placeholder="<%= t('Name')%>"
+                        />
+                        <input type="email"
+                               class="contact-textbox" name="email" value=""
+                               maxlength="500" placeholder="<%= t('Email')%>"
+                        />
+                        <input type="text"
+                               class="contact-textbox" name="phone" value=""
+                               maxlength="500" placeholder="<%= t('Phone Number')%>"
+                        />
+                        <div class="input-file">
+                            <input id="txt" type="text" class="file" value="<%= t('Click to choose your resume')%>"
+                                   onclick="javascript:document.getElementById('file').click();">
+                            <input id="file" type="file" name="file" style='visibility: hidden;'
+                                   name="img" onchange="ChangeText(this, 'txt');"/>
+                            <label id="file-error" class="error" for="file"></label>
+                        </div>
+                        <textarea class="contact-textbox-area" placeholder="<%= t('Message')%>" rows="20"></textarea>
+                        <input type="submit" class="submit-btn"
+                               value="<%= t('Submit')%>"
+                               name="submitbtn"/>
                     </div>
-                    <textarea class="contact-textbox-area" placeholder="<%= t('Message') %>" rows="20"></textarea>
-                    <input type="submit" class="submit-btn"
-                           value="<%= t('Submit') %>"
-                           name="submitbtn"/>
-                </div>
-            </form>
+                </form>
+            </div>
+
         </div>
     </div>
     <%- include('../fragment/footer') %>
@@ -79,19 +59,14 @@
     var jpnContent = '<h3 class="service-group">asoview! JAPAN</h3><p class="text-left">2 Chome-7-7 Jingumae, Shibuya, Tokyo 150-0001, Japan<br />Tel:+813 - 5413 - 7784</p>';
     var jpnInfoWindow = new google.maps.InfoWindow({content: jpnContent});
     var jpnMarker = new google.maps.Marker({position: jpnOffice, map: branchMap, title: 'Japan office'});
-    jpnMarker.addListener('click', function () {
-      jpnInfoWindow.open(branchMap, jpnMarker);
-    });
+    jpnMarker.addListener('click', function() {jpnInfoWindow.open(branchMap, jpnMarker);});
 
     var vnContent = '<h3 class="service-group">asoview! VIET NAM</h3><p class="text-left">3th Floor EBM Tower, 394 Ung Van Khiem, Ward 25, Binh Thanh Dist, Ho Chi Minh City, Viet Nam<br />Tel: +880172-1031001</p>';
     var vnInfoWindow = new google.maps.InfoWindow({content: vnContent});
     var vnMarker = new google.maps.Marker({position: vnOffice, map: branchMap, title: 'Viet Nam office'});
-    vnMarker.addListener('click', function () {
-      vnInfoWindow.open(branchMap, vnMarker);
-    });
+    vnMarker.addListener('click', function() {vnInfoWindow.open(branchMap, vnMarker);});
   }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGO0Ii-UQV8ippAkXdPHkKU2NxMoU69LA&callback=initMap" async
-        defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGO0Ii-UQV8ippAkXdPHkKU2NxMoU69LA&callback=initMap" async defer></script>
 </body>
 </html>

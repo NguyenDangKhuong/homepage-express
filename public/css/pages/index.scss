@@ -61,6 +61,15 @@
 }
 
 .main-container {
+
+  line-height: 1.63;
+  letter-spacing: .5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  .messageTitle {
+    font-size: 30px;
+  }
+
   text-align: center;
   padding-top: 80px;
   position: relative;
@@ -78,6 +87,11 @@
     font-size: 24px;
   }
 
+  .title {
+    color: #e50012;
+    font-size: 40px;
+  }
+
   //section mission
   .mission {
     padding: 20px 0;
@@ -86,8 +100,8 @@
     &-wrapper {
       display: flex;
       justify-content: center;
-      background-color: #e04747;
-      padding: 25px;
+      background-color: black;
+      padding: 0px;
       width: 80%;
       margin: auto;
       opacity: 0;
@@ -112,7 +126,7 @@
       width: 40%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      text-align: left;
       justify-content: center;
       margin-left: 10%;
       color: white;
@@ -234,7 +248,7 @@
       display: block;
     }
     &-background {
-      background: url("/images/product_background.jpg");
+      background: url("/images/index_background.jpg");
       height: 550px;
       background-position: center;
       background-size: cover;
@@ -242,7 +256,6 @@
       z-index: 2;
       width: 90%;
       margin: auto;
-      filter: blur(3px);
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -268,13 +281,14 @@
         background-color: #ce2532;
         height: 200px;
         width: 350px;
+        font-weight: 300;
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: white;
         border-radius: 50%;
-        font-family: initial;
-        font-size: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
       }
       .product-list {
         position: relative;
@@ -309,10 +323,10 @@
 
 @media screen and (min-width: 1440px) {
   .top-background-img:nth-child(1) {
-    top: 65%
+    top: 60%
   }
   .top-background-img:nth-child(2) {
-    top: 50%;
+    top: 45%;
   }
 }
 

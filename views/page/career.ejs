@@ -1,25 +1,419 @@
 <!DOCTYPE html>
 <html>
 <%- include('../fragment/head') %>
+
 <body>
 <div class="l-container">
     <%- include('../fragment/loading') %>
     <%- include('../fragment/header') %>
     <div class="l-contents">
-        <div class="recruit-list">
-            <a href="/career/backend">
-                <div class="recruit-item animated" data-toggle="collapse" data-target="#item2" aria-expanded="true">
-                    <h3 class="recruit-title">Java Team Leader</h3>
-                    <p class="recruit-short-description">
-                    <div><strong>Salary Offer:</strong> $1,500 - $2000</div>
-                    <div><strong>Experience Level:</strong> Junior, Middle, Senior</div>
-                    <div><strong>Total Years Experience:</strong> At least 3 year</div>
-                    <div><strong>Education:</strong> University</div>
-                    </p>
-                </div>
-            </a>
+        <div class="section-header">
+    <div class="top-header staff-header"> Careers</div>
+    </div>
+<div class="o-container" >
+    <div class="container">
+        <div class="rows"></div>
+        <div id="o-row"> 
+            <div class="row">
+                    <div class="col-md-9">
+                        <div id = "career"> ENGINEER</div>
+                        <div id = "content">Java Team Leader ( Up to 1500$ )</div>
+                    </div>
+
+                    <div class="col-md-3 text-right">
+                        <button id = "buttom" data-toggle="modal" data-target="#hr">VIEW DETAIL</button>
+                    </div>
+                    
+            </div>
+    </div>   
+            
+    <div id="o-row">
+            <div class="row">
+                    <div class="col-md-9">
+
+                        <div id = "career"> ENGINEER</div>
+                        <div id = "content">Java Junior ( Up to 1500$ ) </div>
+                        
+                    </div>
+
+                    <div class="col-md-3 text-right">
+                        <button id = "buttom" data-toggle="modal" data-target="#hr">VIEW DETAIL</button>
+                    </div>
+                    
+            </div> 
+    </div>   
+    <div id="o-row">
+            <div class="row">
+                    <div class="col-md-9">
+
+                        <div id = "career"> ENGINEER</div>
+                        <div id = "content">Java Fresher ( Up to 1500$ )</div>
+                        
+                    </div>
+
+                    <div class="col-md-3 text-right">
+                        <button id = "buttom" data-toggle="modal" data-target="#fontend">VIEW DETAIL</button>
+                    </div>
+                    
+            </div>
+            
+        </div> 
+        <div id="o-row">   
+            <div class="row">
+                    <div class="col-md-9">
+
+                        <div id = "career"> ENGINEER</div>
+                        <div id = "content">Java Team Leader ( Up to 1500$ )</div>
+                        
+                    </div>
+
+                    <div class="col-md-3 text-right">
+                        <button id = "buttom" data-toggle="modal" data-target="#backend">VIEW DETAIL</button>
+                    </div>
+                    
+            </div>   
+    </div> 
+            
+        
+    </div>
+</div>
+
+<!-- -->
+<div class="container">
+    <h3 class="text-center" style="margin: 40px 0; margin-top: 100px">
+        <%= t('Carrer Infor') %>
+    </h3>
+
+    <div class="row nopadding career-info">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nopadding" data-aos="fade-right">
+            <div class="career-info-wrapper">
+                <a href="/staff">
+                    <img class="career-info-img" src="https://i.imgur.com/kn7cC5p.jpg">
+                    <div class="career-info-title career-info-title_member">
+                        <span><%= t('Carrer Infor1') %></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nopadding" data-aos="fade-left">
+            <div class="career-info-wrapper">
+                <a href="/about-us">
+                    <img class="career-info-img" src="images/career_aboutUs.jpg">
+                    <div class="career-info-title career-info-title_career">
+                        <span><%= t('Carrer About') %></span>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
+
+</div>
+
+
+
+
+
+
+<div class="container">
+
+    <!-- Modal -->
+    <div class="modal fade" id="hr" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal content start-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="container">
+                      <div class="contents-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="text-center">HUMAN RESOURCE</h3>
+                          <div class="row contents-header-subs">
+                              <div class="col-md-6 text-center">
+                                  <h5 class="salary">Salary up to 1.500$</h5>
+                              </div>
+                              <div class="col-md-6 text-center">
+                                  <h5 class="startDay">Start day: 01/01/2019</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="modal-body">
+                  <p><b>Job Description</b></p>
+                  <p>- 人事・総務全般</p>
+                  <p>- 人事戦略の遂行</p>
+                  <p>- 資料やデータ作成</p>
+                  <p>- 労使交渉</p>
+                  <p>- 監督官庁との交渉</p>
+                  <p>- 社内行事の計画と実行</p>
+                  <p>- 外国人労働者のサポート</p>
+                  <p>- コスト管理</p>
+
+                  <p><b>Requirement</b></p>
+                  <p>技能・資格：</p>
+                  <p>- 日系スタートアップ企業を立ち上げ経験、日本語N2相当レベル</p>
+                  <p>- ベトナム国内の法律に精通している方</p>
+                  <p>一緒にアソビューを盛り上げたい方、ミッションに共感している方</p>
+                  <p>※日本で就業経験大歓迎</p>
+
+                  <p><b>Why you don't join to Asoview VietNam</b></p>
+
+                  <p><b># Basic Benefits</b></p>
+                  <p>_ 給与査定年2回、プレゼンテーション大会/表彰制度、13ヶ月給与、特別保険加入、健康診断年1回、社員旅行</p>
+                  <br>
+
+                  <p><b>#Professional growth opportunities</b></p>
+                  <p>_ アソビュージャパンに駐在する機会</p>
+                  <p>_ 日本でアソビューのコンテンツを体験する機会</p>
+                  <br>
+
+                  <p><b>#Job perks -> Why Asoview Vietnam?</b></p>
+                  <p>_ アソビューベトナムの特別休暇付与</p>
+                  <br>
+
+                  <p>・夏季休暇 ・新暦の年末年始休暇</p>
+                  <p>_ 毎月実施されるチームビルディング、誕生日回、その他パーティー</p>
+              </div>
+
+              <div class="modal-footer" style="border-top: none;">
+                <div class="container-fluid footer text-center">
+                    <h5>APPLY THIS JOB</h5>
+
+                    <div class="row footer-input">
+                        <div class="col-md-4">
+                            <input class="information" type="text" placeholder="Name"/>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="information" type="email" placeholder="Email"/>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="information" type="tel" placeholder="Phone number"/>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-attachment">
+                        Attach File
+                    </button>
+
+                    <p>We accept doc, docx, pdf, up to...</p>
+
+                    <button class="btn btn-submit">
+                        SUBMIT
+                    </button>
+                </div>
+              </div>
+
+          </div>
+          <!-- Modal content end -->
+        </div>
+
+    </div>
+
+
+    <!-- Font end -->
+   
+
+    <!-- Modal -->
+    <div class="modal fade" id="fontend" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal content start-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="container">
+                      <div class="contents-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="text-center">FRONT-END</h3>
+                          <div class="row contents-header-subs">
+                              <div class="col-md-6 text-center">
+                                  <h5 class="salary">Salary up to 2000$</h5>
+                              </div>
+                              <div class="col-md-6 text-center">
+                                  <h5 class="startDay">Start day: 01/01/2019</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="modal-body">
+                  <p><b>Requirement</b></p>
+                  <p>_ At least years experience build web app solutions, especially ecommerce or user-oriented apps.</p>
+                  <p>_ Experience with advanced Javascript library & frameworks, such as ReactJS, Redux…</p>
+                  <p>_ Master in web development technologies, including HTML5, CSS3, Javascript,…</p>
+                  <p>_ Knowledge of RESTFUL API, MySQL.</p>
+                  <p>_ Master in code versioning tools, such as</p>
+                  <p>_ Understand technical debt and ways to balance technical simplicity & feature requirements.</p>
+                  <p>_ Responsible, ownership attitude. Details-oriented. Willing to use technical know-how to simplify & maximize user experience.</p>
+
+                  <p><b>Working enviroment</b></p>
+                  <p>_ Professional, friendly, creative and chance to learn from Japanese experts.</b>
+                  <p>_ Opportunities to study new techique and apply to real working.</b>
+
+                  <p><b>Why you don't join to Asoview Viet Nam</b></p>
+
+                  <p># Basic Benefits</p>
+                  <p>_ Salary review twice a year</p>
+                  <p>_ Quarterly & Yearly Award for Excellent employees</p>
+                  <p>_ 13th month salary</p>
+                  <p>_ Social insurance and annual leave based on Labor Law</p>
+                  <p>_ Annual health check</p>
+                  <p>_ Health care package</p>
+                  <p>_ Company trip</p>
+                  <p>_ Lunch allowance</p>
+                  </br>
+
+                  <p># Professional growth opportunities</p>
+                  <p>_ Chances to work on-site in Japan</p>
+                  <p>_ Experience Asoview in Japan</p>
+                  </br>
+
+                  <p># Job perks -> Why AsoviewVietnam ?</p>
+                  <p>_ Additional holiday (4 days)</p>
+                  <p>・Summer Holiday (3 days) ・Year End & New Year (1 day)</p>
+                  <p>_ We have various team building activities, such as Welcome party eveymonth, outdoor activities, team events, etc.</p>
+              </div>
+
+              <div class="modal-footer" style="border-top: none;">
+                <div class="container-fluid footer text-center">
+                    <h5>APPLY THIS JOB</h5>
+
+                    <div class="row footer-input">
+                        <div class="col-md-4">
+                            <input class="information" type="text" placeholder="Name"/>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="information" type="email" placeholder="Email"/>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="information" type="tel" placeholder="Phone number"/>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-attachment">
+                        Attach File
+                    </button>
+
+                    <p>We accept doc, docx, pdf, up to...</p>
+
+                    <button class="btn btn-submit">
+                        SUBMIT
+                    </button>
+                </div>
+              </div>
+
+          </div>
+          <!-- Modal content end -->
+        </div>
+
+    </div>
+
+    <!-- Back end -->
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="backend" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal content start-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="container">
+                      <div class="contents-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="text-center">BackEnd</h3>
+                          <div class="row contents-header-subs">
+                              <div class="col-md-6 text-center">
+                                  <h5 class="salary">Salary up to 2000$</h5>
+                              </div>
+                              <div class="col-md-6 text-center">
+                                  <h5 class="startDay">Start day: 01/01/2019</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="modal-body">
+                  <p><b>Requirement</b></p>
+                  <p>_ Strong knowledge of OOP, Data Structure and Algorithms.</p>
+                  <p>_ Knowledge about Java SE (Java 8 is plus).</p>
+                  <p>_ Spring frameworks (Spring boot is plus).</p>
+                  <p>_  Deep understanding of Relational database(MySQL), MyBatis is plus.</p>
+                  <p>_  Knowledge of NOSQL is plus.</p>
+                  <p>_  Having knowledge about mobile applications, web applications.</p>
+                  <p>_  Basic experience of working with Linux environment.</p>
+                  <p>_  Good analytical and problem-solving skills.</p>
+
+                  <p><b>Working enviroment</b></p>
+                  <p>_ Professional, friendly, creative and chance to learn from Japanese experts.</b>
+                  <p>_ Opportunities to study new techique and apply to real working.</b>
+
+                  <p><b>Why you don't join to Asoview Viet Nam</b></p>
+
+                  <p># Basic Benefits</p>
+                  <p>_ Salary review twice a year</p>
+                  <p>_ Quarterly & Yearly Award for Excellent employees</p>
+                  <p>_ 13th month salary</p>
+                  <p>_ Social insurance and annual leave based on Labor Law</p>
+                  <p>_ Annual health check</p>
+                  <p>_ Health care package</p>
+                  <p>_ Company trip</p>
+                  <p>_ Lunch allowance</p>
+                  </br>
+
+                  <p># Professional growth opportunities</p>
+                  <p>_ Chances to work on-site in Japan</p>
+                  <p>_ Experience Asoview in Japan</p>
+                  </br>
+
+                  <p># Job perks -> Why AsoviewVietnam ?</p>
+                  <p>_ Additional holiday (4 days)</p>
+                  <p>・Summer Holiday (3 days) ・Year End & New Year (1 day)</p>
+                  <p>_ We have various team building activities, such as Welcome party eveymonth, outdoor activities, team events, etc.</p>
+              </div>
+
+              <div class="modal-footer" style="border-top: none;">
+                <div class="container-fluid footer text-center">
+                    <h5>APPLY THIS JOB</h5>
+
+                    <div class="row footer-input">
+                        <div class="col-md-4">
+                            <input class="information" type="text" placeholder="Name"/>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="information" type="email" placeholder="Email"/>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="information" type="tel" placeholder="Phone number"/>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-attachment">
+                        Attach File
+                    </button>
+
+                    <p>We accept doc, docx, pdf, up to...</p>
+
+                    <button class="btn btn-submit">
+                        SUBMIT
+                    </button>
+                </div>
+              </div>
+
+          </div>
+          <!-- Modal content end -->
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
     <%- include('../fragment/footer') %>
 </div>
 <%- include('../fragment/common-scripts') %>

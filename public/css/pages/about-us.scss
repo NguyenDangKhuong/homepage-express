@@ -1,7 +1,15 @@
+
+.l-contents{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f2f8fb;
+}
 .about-us {
   margin-top: 50px;
   width: 80%;
   margin: auto;
+  background: #f2f8fb;
+  line-height: 1.63;
+  letter-spacing: .5px;
   &_title {
     margin-top: 20px;
   }
@@ -19,7 +27,10 @@
   }
 
   h3 {
-    color: #9c9c9c;
+    line-height: 1.63;
+    letter-spacing: .5px;
+    color: #4b4949;
+    font-size: 40px;
   }
 
   .left {
@@ -34,15 +45,18 @@
     padding: 20px 0;
     margin-bottom: 150px;
     width: 80%;
+    color: #747c83;
     margin: auto;
     padding-bottom: 50px;
     p{
       font-size: 18px;
+      color: #747c83;
     }
   }
 
   .our-mission {
     margin-bottom: 100px !important;
+    color: #747c83;
     &-text {
       display: flex;
       align-items: center;
@@ -78,8 +92,10 @@
     margin-bottom: 50px;
     text-align: left;
     padding: 15px;
-    font-family:  iragino Kaku Gothic Pro;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #747c83;
     h3{
+      color: #4b4949;
       padding-bottom: 20px;
     }
     table{
@@ -107,7 +123,8 @@
     margin-bottom: 50px;
     text-align: left;
     padding: 15px !important;
-    font-family:  iragino Kaku Gothic Pro;
+    color: #747c83;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     h3{
       padding-bottom: 20px;
     }
@@ -133,14 +150,14 @@
       a {
         color: #4c4949;
       }
-
     }
     &-img {
       width: 100%;
       height: 300px;
     }
     &-title {
-      width: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      width: 100%;
       transform: translate(0%, -50%);
       height: 60px;
       display: flex;
@@ -148,9 +165,18 @@
       padding-left: 10px;
       &_member{
         background: #dce858;
+        margin: 0 0 0 50px;
+        height: 80px;;
       }
       &_career{
         background: #f1749f;
+        margin: 0 0 0 50px;
+        height: 80px;
+      }
+      span{
+        line-height: 1.5;
+        font-size: 22px;
+        font-weight: 300;
       }
       &:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

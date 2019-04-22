@@ -11,17 +11,17 @@
         </div>
         <div class="contact">
             <div class="contact-header">
-                CONTACT INFORMATION
+                <%= t('Contact Information') %>
             </div>
             <div class="contact-content">
                 <div class="contact-address">
-                    <strong>Address:</strong> 3 level, EBM Tower, 394 Ung Văn Khiêm Street, 25 Ward, Bình Thạnh District, TPHCM
+                    <strong><%= t('Address') %>:</strong> <%= t('Address1') %>
                 </div>
                 <div class="contact-tel">
-                    <strong>Tel:</strong><i class="fas fa-phone"></i> 028-7109-9837
+                    <strong><%= t('phone') %>:</strong><i class="fas fa-phone"></i> <%= t('phone1') %>
                 </div>
                 <div class="contact-email">
-                    <strong>Email:</strong><i class="fas fa-envelope"></i> recruit_vietnam@asoview.co.jp
+                    <strong><%= t('Email') %>:</strong><i class="fas fa-envelope"></i> recruit_vietnam@asoview.co.jp
                 </div>
             </div>
             <div class="world-branch" data-aos="fade-right">
@@ -32,7 +32,7 @@
             </div>
             <form action="/send" enctype="multipart/form-data" id="contact-form" method="post" data-aos="fade-up">
                 <div class="contact-form-title">
-                    Contact Form
+                    <%= t('Contact form') %>
                 </div>
                 <div class="col-sm-12 textboxholders">
                     <input type="text"
@@ -47,13 +47,7 @@
                            class="contact-textbox" name="phone" value=""
                            maxlength="500" placeholder="<%= t('Phone Number') %>"
                     />
-                    <div class="input-file">
-                        <input id="txt" type="text" class="file" value="<%= t('Click to choose your resume') %>"
-                               onclick="javascript:document.getElementById('file').click();">
-                        <input id="file" type="file" name="file" style='visibility: hidden;'
-                               name="img" onchange="ChangeText(this, 'txt');"/>
-                        <label id="file-error" class="error" for="file"></label>
-                    </div>
+                    <input class="contact-textbox" type="text" placeholder="<%= t('Subject') %>">
                     <textarea class="contact-textbox-area" placeholder="<%= t('Message') %>" rows="20"></textarea>
                     <input type="submit" class="submit-btn"
                            value="<%= t('Submit') %>"
